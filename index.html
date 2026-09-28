@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedro de Luna Huerta · Data Scientist y AI/ML Engineer</title>
+  <meta name="description" content="Portfolio interactivo de Pedro de Luna Huerta: Data Scientist, AI/ML Engineer y co-fundador de Nódicus. LLMs y RAG, visión por computador, datos de sensores y publicaciones en CinC y CASEIB.">
+  <meta name="author" content="Pedro de Luna Huerta">
+  <meta name="theme-color" content="#0b100d">
+
+  <!-- Previsualización al compartir el enlace (LinkedIn, X, WhatsApp…).
+       TODO al publicar: añade og:url con la dirección de la web y pon la URL completa en og:image y twitter:image
+       (p. ej. https://tudominio.com/og-image.png); muchas redes no aceptan rutas relativas. -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Pedro de Luna Huerta · Portfolio">
+  <meta property="og:description" content="Data Scientist · AI/ML Engineer · Co-fundador de Nódicus. Un portfolio que funciona como una terminal.">
+  <meta property="og:image" content="og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Terminal con el nombre PEDRO en grande y el texto ~/portfolio">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="profile:first_name" content="Pedro">
+  <meta property="profile:last_name" content="de Luna Huerta">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@pedrodelunah">
+  <meta name="twitter:title" content="Pedro de Luna Huerta · Portfolio">
+  <meta name="twitter:description" content="Data Scientist · AI/ML Engineer · Co-fundador de Nódicus.">
+  <meta name="twitter:image" content="og-image.png">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pedro de Luna Huerta",
+    "jobTitle": "Data Scientist · AI/ML Engineer",
+    "email": "mailto:pedrodelunahuerta@gmail.com",
+    "worksFor": { "@type": "Organization", "name": "Nódicus", "url": "https://nodicus.com" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universitat de València" },
+    "knowsAbout": ["Machine Learning", "LLMs", "Retrieval-Augmented Generation", "Computer Vision", "Time Series", "Digital Twins"],
+    "sameAs": [
+      "https://www.linkedin.com/in/pedro-de-luna-huerta-1a161b333/",
+      "https://x.com/pedrodelunah"
+    ]
+  }
+  </script>
+
+  <script>
+    // Aplica el tema guardado antes del primer pintado para evitar parpadeos
+    try { document.documentElement.dataset.theme = JSON.parse(localStorage.getItem('pf.theme')) || 'verde'; } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="window" id="window">
+    <header class="titlebar">
+      <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="title" id="title">visitante@pedro: ~</span>
+      <span class="bar-actions">
+        <button type="button" class="bar-btn lang-btn" id="lang-btn" data-cmd="lang toggle" title="Switch to English" aria-label="Switch to English">EN</button>
+        <button type="button" class="bar-btn" data-cmd="theme siguiente" title="Cambiar tema / Change theme" aria-label="Cambiar tema / Change theme">◐</button>
+      </span>
+    </header>
+
+    <header class="hero-header" id="hero" hidden></header>
+
+    <section class="screen" id="screen" aria-label="Terminal">
+      <div class="output" id="output" aria-live="polite"></div>
+      <form class="prompt-line" id="prompt-form" autocomplete="off" hidden>
+        <label class="prompt" id="prompt" for="cmd"></label>
+        <input id="cmd" type="text" spellcheck="false" autocapitalize="off" autocorrect="off" enterkeyhint="send" aria-label="Escribe un comando / Type a command">
+      </form>
+    </section>
+  </main>
+
+  <noscript>
+    <p class="noscript">Este portfolio necesita JavaScript para funcionar como una terminal. / This portfolio needs JavaScript to run as a terminal.</p>
+  </noscript>
+
+  <script src="data.js"></script>
+  <script src="data.en.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
