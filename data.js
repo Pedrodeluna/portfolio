@@ -3,7 +3,6 @@
 //
 // - Los campos vacíos ('') no se muestran.
 // - En los textos puedes usar **negrita** y `comando` (se convierte en un botón que ejecuta ese comando).
-// - Busca "TODO" para ver los datos que faltan o que conviene revisar.
 
 window.PORTFOLIO = {
   profile: {
@@ -73,7 +72,7 @@ window.PORTFOLIO = {
     },
     {
       file: 'kongsberg.md',
-      title: 'Data Scientist', // TODO: revisa el título del puesto
+      title: 'Data Scientist',
       org: 'Kongsberg',
       when: '2025 → jun. 2026',
       sub: 'Datos de sensores submarinos de pesca',
@@ -171,7 +170,7 @@ window.PORTFOLIO = {
           text: 'Un modelo de visión es tan bueno como los datos con los que aprende. Hacernos cargo también del dataset nos permite controlar la calidad de principio a fin, en lugar de depender de datos que no encajan con el problema.',
         },
       ],
-      tags: ['Visión por computador', 'Creación de datasets', 'Deep learning', 'Salud'], // TODO: revisa tecnologías
+      tags: ['Visión por computador', 'Creación de datasets', 'Deep learning', 'Salud'],
       links: [{ label: 'sobre Nódicus', cmd: 'empresa' }],
     },
     {
